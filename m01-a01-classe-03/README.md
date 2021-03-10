@@ -12,9 +12,11 @@ Erros possíveis de serem encontrados:
 - tags que eram para fechar outra tag mas não fecham
   - por ex um `<h1>` aberto e um outro `<h1>` no fim de uma linha que supostamente fecharia o primeiro h1
 - tags que não existem
-  - por ex uma tag `<batata>`
+  - por ex uma tag `<batata>`, nesse caso a tag pode ser qualquer outra que você decidir
 - tags sendo fechadas dentro de outras tags
-  - por ex `<h1> <p> </h1> </p>`
+  - por ex `<h1> <p> </h1> </p>`, nesse caso o `</h1>` era para ser um `</p>` e vice-versa
+- um atributo que é separado por espaço e não está contido em aspas (")
+  - por ex `<h1 style=color: red;>`, nesse caso o valor deveria estar contido em aspas
 
 ---
 
